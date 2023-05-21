@@ -31,3 +31,13 @@ cat archivo.txt | grep 127 | awk ' { print "host ::" $2 " | IP :: " $1 } '
 ```sh
 cat archivo.txt | grep 127 | wc -l
 ```
+
+## comando varios
+
+### comando lsof
+'lsof -i -P' puertos abiertos, 'grep -i listen' puerto escuchandos.
+
+```sh
+lsof -i -P | grep -i listen
+```
+
