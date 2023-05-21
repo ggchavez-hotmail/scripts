@@ -15,3 +15,19 @@ cat archivo.txt | cut -c 1-10
 ```sh
 cat archivo.txt | cut -d " " -f 1,2 | sort | uniq -c
 ```
+
+## comando grep
+
+### opcion awk 
+'grep 127' busca string 127, 'awk' formatear la salida.
+
+```sh
+cat archivo.txt | grep 127 | awk ' { print "host ::" $2 " | IP :: " $1 } '
+```
+
+### opcion wc 
+'grep 127' busca string 127, 'wc -l' cuenta cantidad de ocurrencias.
+
+```sh
+cat archivo.txt | grep 127 | wc -l
+```
