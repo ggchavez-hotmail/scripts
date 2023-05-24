@@ -38,6 +38,20 @@ cat archivo.txt | grep 127 | wc -l
 'lsof -i -P' puertos abiertos, 'grep -i listen' puerto escuchandos.
 
 ```sh
-lsof -i -P | grep -i listen
+sudo lsof -i -P | grep -i listen
+```
+
+### comando dpkg
+'dpkg -l' versiones instaladas, 'grep golang-go' programa especifico.
+
+```sh
+dpkg -l | grep golang-go
+```
+
+### comando apt-cache
+'apt-cache madison' versiones disponibles para apt install, ' golang-go' programa especifico.
+
+```sh
+apt-cache madison golang-go
 ```
 
