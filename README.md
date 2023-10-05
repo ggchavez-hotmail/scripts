@@ -55,3 +55,8 @@ dpkg -l | grep golang-go
 apt-cache madison golang-go
 ```
 
+### listar solo directorios
+
+```sh
+ls -d */
+```
