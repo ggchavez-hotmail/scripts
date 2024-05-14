@@ -267,5 +267,10 @@ kubectl api-resources --api-group=extensions # All resources in the "extensions"
 #https://k8s-docs.netlify.app/en/docs/reference/kubectl/cheatsheet/
 #https://www.bluematador.com/learn/kubectl-cheatsheet
 
+########################################
+# Recuperar información de Describe
+########################################
+kubectl describe pods -n tef-legacy | grep -e 'Controlled By: ' -e 'Started: ' -e 'Reason: ' -e 'Exit Code: '
+
 
 
