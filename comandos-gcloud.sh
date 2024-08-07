@@ -17,3 +17,7 @@ gcloud run jobs executions list --job XXXXXX --region=us-east4
 #borrar log especifico
 gcloud run jobs executions delete XXXXXX-XXX --quiet --region=us-east4
 
+#listar y borrar logs de job
+gcloud run jobs executions list --job XXXXXX --region=us-east4 | awk '{print "gcloud run jobs executions delete " $3 " --quiet --region=us-east4"}' | sh
+
+
