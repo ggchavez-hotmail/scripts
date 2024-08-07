@@ -12,8 +12,8 @@ gcloud container clusters get-credentials XXX-XX-XX-XXX-XX --region=southamerica
 gcloud logging logs list
 
 #ver ejecución clourun
-gcloud run jobs executions list --job XXXXXX
+gcloud run jobs executions list --job XXXXXX --region=us-east4
 
 #borrar log especifico
-gcloud run jobs executions delete XXXXXX-XXX --quiet
+gcloud run jobs executions delete XXXXXX-XXX --quiet --region=us-east4
 
